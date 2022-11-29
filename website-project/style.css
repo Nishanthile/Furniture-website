@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    list-style-type: none;
+}
+
+:root {
+    --text: #ffff;
+    --text-sm: 1.5rem;
+}
+
+
+
+.carousel-item img {
+    max-height: 35rem;
+}
+
+.carousel-item h3 {
+    line-height: 3rem;
+    margin-bottom: 7rem;
+    font-size: 3rem;
+    letter-spacing: .3rem;
+}
+
+.main-top-img {
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    width: 97%;
+    top: 10%;
+    left: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: var(--text-sm);
+    padding: 1rem;
+}
+
+
+.nav-menu ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+
+.nav-menu ul li a:hover {
+    box-shadow: inset 0px -5px gold;
+    color: yellow;
+}
+
+.social-icons {
+    position: absolute;
+    top: 70%;
+    left: 85%;
+    font-size: var(--text-sm);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+.social-icons >span>a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+
+.ham {
+    display: none;
+    margin: 0px 5px;
+    z-index: 100000;
+    cursor: pointer;
+}
+
+.bar {
+    width: 1.6rem;
+    height: 0.2rem;
+    background-color: var(--text);
+    margin: 0.3rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+
+    margin: 3rem auto;
+    align-items: center;
+}
+
+.right-section {
+    position: relative;
+    justify-self: center;
+}
+
+.right-section::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 5px solid gray;
+    top: 8%;
+    left: 8%;
+}
+
+.right-section img {
+    max-height: 25rem;
+    z-index: 1000;
+    position: relative;
+}
+
+.owl-carousel .item>img {
+    max-height: 35rem;
+}
+
+.owl-carousel {
+    position: relative;
+}
+
+button.owl-prev {
+    position: absolute;
+    top: 39%;
+    left: 6%;
+
+}
+
+button.owl-next {
+    position: absolute;
+    top: 39%;
+    right: 6%;
+}
+
+.owl-prev span,
+.owl-next span {
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 3rem;
+    background-color: rgb(249, 244, 244);
+    border: 2px solid gray;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.counter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* **********************client-carsouel************************ */
+.clients {
+    background-color: #F1F1F1;
+    /* height: 40rem; */
+    width: 100%;
+}
+
+.testemonial {
+    width: 45rem !important;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    background-color: white;
+    color: black;
+
+}
+
+.indicator {
+    position: absolute !important;
+    top: 85% !important;
+    left: 0% !important;
+    z-index: 1000;
+
+}
+
+.main-car {
+    position: relative;
+}
+
+.person-1 {
+    width: 85px !important;
+    height: 85px !important;
+    border-radius: 50%;
+    border: 2px solid red !important;
+}
+
+.indicator .active {
+    transform: scale(1.2) !important;
+}
+
+.para {
+    padding: 3rem 2rem;
+
+}
+
+.client-prev,
+.client-next {
+    background-color: black;
+}
+
+.inner-car {
+    width: 50rem;
+}
+
+/* 
+*********************************brands***************** */
+.company-brands {
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+/* 
+*************************************team********************** */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.team-1 {
+    width: 20rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.team-1>img {
+    width: 100%;
+}
+
+.team-1-info {
+    position: absolute;
+    top: -100%;
+    left: -5%;
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.team-1:hover .team-1-info {
+    top: 0%;
+}
+
+.team-1-social {
+    display: flex;
+    gap: 2rem;
+}
+
+.team-1-social a {
+    color: white;
+}
+.team-1-social .fa-facebook:hover{
+    color: rgb(24, 14, 226);
+}
+.team-1-social .fa-twitter:hover{
+    color: rgb(14, 141, 226);
+}
+.team-1-social .fa-instagram:hover{
+    color: purple;
+}
+.team-1-social .fa-youtube:hover{
+    color: red;
+}
+.contact-img img {
+    width: 100%;
+    max-height: 25rem;
+
+}
+
+.contact-img {
+    position: relative;
+}
+
+.contact-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    top: 0%;
+    left: 0%;
+}
+
+.contact-heading {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.footer{  
+    background-image: url("./images/footer.jpg");
+   color: #F1F1F1;
+    width: 100%;
+    /* max-height: 25rem; */
+}
+
+input{
+    margin: 0;
+   width:200px;
+}
+.footer-link-head{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 2rem;
+
+}
+.footer-ul{
+    padding-left: 0;
+}
+.footer-ul>li>a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+.footer-border{
+    border-top: 0.5px solid white;
+    border-bottom: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+/* *************************Mobile Responsive******************************** */
+
+@media only screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* *****************nav-responsive start************* */
+    .nav-menu {
+        position: fixed;
+        top: -150%;
+        left: 0;
+
+        width: 100%;
+
+        height: 100%;
+        background-color: grey;
+        text-align: center;
+        z-index: 100000;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        margin-top: 3rem;
+        gap: 3rem;
+    }
+
+    .nav-menu ul li a {
+        font-size: 2rem;
+    }
+
+    .nav-menu.active {
+        top: 0%;
+    }
+
+    .contact-no {
+        display: none;
+    }
+
+    .carousel-item img {
+        height: 15rem;
+
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .nav {
+        top: 4%;
+    }
+
+    .nav a {
+        padding: 0.5rem;
+    }
+
+    .ham {
+        display: block;
+    }
+
+    .ham.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .ham.active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+        transition: all 0.8s;
+    }
+
+    .ham.active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+        transition: all 0.8s;
+    }
+
+
+    /* *****************nav-responsive end************* */
+
+    /* ****************************responsive grid start************* */
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .right-section img {
+        width: 18rem;
+    }
+
+    /* * ****************************responsive grid end************* * */
+
+    /* *******************************responsive project section start******************* */
+    .owl-carousel .item>img {
+        height: 25rem;
+    }
+
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+
+    .counter {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ****************************responsive client carsouel********************** */
+    .para.active,
+    .para {
+        width: 20rem !important;
+        padding: 4rem 0;
+    }
+
+    .indicator {
+        left: 15% !important;
+
+        width: 10rem !important;
+    }
+
+    /* .person-1{
+    width: 30px;
+    height: 30px;
+} */
+    /* .iner-car{
+    width:25rem!important;
+} */
+    .client-next {
+        position: absolute;
+        top: 0;
+        left: 75%;
+    }
+
+    .inner-car {
+        width: 30rem !important;
+    }
+
+    .testemonial {
+        width: 20rem !important;
+    }
+
+
+
+    /* *************************************responsive braands********************* */
+    .company-brands {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* ****************************responsive team*************************** */
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .team-1 {
+        width: 18rem;
+    }
+
+
+    .contact-heading {
+        font-size: 0.8rem;
+
+    }
+}
